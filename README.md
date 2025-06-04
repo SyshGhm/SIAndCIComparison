@@ -79,7 +79,6 @@ The final result is a single plot showing all four curves over \(T\) years.
   * Add color/marker options.
   * Toggle on/off specific curves.
 * **GUI Version**: Use `tkinter` or `PyQt` for a graphical front end.
-* **Extend to Other Compounding Frequencies**: Quarterly, monthly, daily.
 
 ---
 
