@@ -33,24 +33,21 @@ The final result is a single plot showing all four curves over \(T\) years.
   - Compounding frequency \(n\) (e.g. 2 for semi-annual)
 
 - **Calculations**  
-  - **Varying-rate Simple Interest**  
-    \[
-      A_{\text{vary, SI}}(k) \;=\; P \;+\; 100 \times \sum_{i=1}^k \bigl(r_i/100\bigr)
-    \]
-    (accumulates each year’s slice of interest on the original principal)  
-  - **Varying-rate Compound Interest**  
-    \[
-      P_{i} \;=\;P_{i-1} \times \Bigl(1 + \tfrac{r_i}{100\,n}\Bigr)^{n},\quad P_{0} = P
-    \]
-    (rolls the balance forward each year at that year’s rate, compounding \(n\) times per year)  
-  - **Fixed-rate Simple Interest**  
-    \[
-      A_{\text{fixed, SI}}(k) \;=\; P \;+\; P \times \tfrac{R_t}{100} \times k
-    \]
-  - **Fixed-rate Compound Interest (semi-annual)**  
-    \[
-      A_{\text{fixed, CI}}(k) \;=\; P \times \Bigl(1 + \tfrac{R_t}{100\,n}\Bigr)^{n\,k}
-    \]
+ Formulas (ASCII)
+
+Varying-rate Simple Interest:
+A\_vary\_SI(year) = P + sum(P \* r\_i / 100) for i = 1 to year
+
+Varying-rate Compound Interest (compounded n times per year):
+P₀ = P
+Pᵢ = Pᵢ₋₁ \* (1 + rᵢ / (100 \* n)) ^ n
+
+Fixed-rate Simple Interest:
+A\_fixed\_SI(year) = P + (P \* R \* year / 100)
+
+Fixed-rate Compound Interest (compounded n times per year):
+A\_fixed\_CI(year) = P \* (1 + R / (100 \* n)) ^ (n \* year)
+
 
 - **Plotting**  
   - Uses `matplotlib` to produce a single graph with:  
