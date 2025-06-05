@@ -82,12 +82,6 @@ The final result is a single plot showing all four curves over \(T\) years.
 
 ---
 
-## 🎓 Why This Matters
-
-* **Self-Directed Learning**: You’ll have a concrete Python + Math project to showcase—even “small” projects count.
-* **Problem-Solving Story**: The commit history and notes document how you debugged subtle financial-math bugs.
-* **Demonstrates Applied Skills**: Combines loops, indexing, data structures, function logic, and plotting in a real-world context.
-
 Feel free to copy, fork, and build on this code. Any feedback or pull requests are welcome!
 
 ---
