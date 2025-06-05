@@ -72,13 +72,13 @@ The final result is a single plot showing all four curves over \(T\) years.
 
 ## 🔮 Future Improvements
 
-* **CSV/Excel Export**: Save yearly values to a file for further analysis.
+* **CSV/Excel Export**: Save yearly values to a file for further analysis. - ✅
 * **User Input Validation**: Reject negative rates or non-numeric entries.
 * **Graph Customization**:
 
   * Add color/marker options.
   * Toggle on/off specific curves.
-* **GUI Version**: Use `tkinter` or `PyQt` for a graphical front end.
+
 
 ---
 
